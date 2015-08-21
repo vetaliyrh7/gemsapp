@@ -1,0 +1,12 @@
+
+    <div class="col-lg-12 col-md-12 col-sm-12 grey" ng-controller="SingleGemController as singleGem">
+        <product-title></product-title>
+        <!-- custom directive -->
+    <div class="card">{{singleGem.gem.descriptionFull}}</div>
+        <!-- custom directive -->
+        <img class="thumbnail img-lg" ng-src="{{singleGem.gem.images[0].full}}" alt="{{singleGem.gem.name}}"/>
+        <div style="margin-top: 1%">
+            <a href="#/" class=" btn btn-success-outline">Back to Gems</a>
+        </div>
+        <hr class="m-y-md">
+    </div>

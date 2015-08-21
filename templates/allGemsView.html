@@ -1,0 +1,13 @@
+<div class="row" ng-repeat="product in store.products | orderBy: '-price'">
+    <div class="col-lg-9 col-md-9 col-sm-12 grey">
+        <product-title></product-title>
+        <!-- custom directive -->
+        <product-panels></product-panels>
+        <!-- custom directive -->
+        <hr class="m-y-md">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12">
+        <img class="thumbnail img-small" ng-src="{{product.images[0].full}}" alt="gem"/>
+        <button class="absolute btn btn-success" type="button" name="button" ng-show="product.canPurchase" ng-click="store.count(product.price)">Add to a cart</button>
+    </div>
+</div>

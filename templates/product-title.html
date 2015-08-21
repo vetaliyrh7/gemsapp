@@ -1,0 +1,4 @@
+<h1><a href="#/{{product.id}}">{{product.name}}</a></h1>
+<h1 ng-show="location.path() === '/' + {{store.product.id}}">{{singleGem.gem.name}}</h1>
+<h2 class="text-info">{{product.price | currency}}</h2>
+<h2 ng-show="location.path() === '/' + {{store.product.id}}">{{singleGem.gem.price | currency}}</h2>

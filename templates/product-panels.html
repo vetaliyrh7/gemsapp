@@ -1,0 +1,35 @@
+<ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+        <a href ng-click="panel.selectTab(1)" class="nav-link" ng-class="{active: panel.isSelected(1)}">Description</a>
+    </li>
+    <li class="nav-item">
+        <a href ng-click="panel.selectTab(2)" class="nav-link" ng-class="{active: panel.isSelected(2)}">Specifications</a>
+    </li>
+    <li class="nav-item">
+        <a href ng-click="panel.selectTab(3)" class="nav-link" ng-class="{active: panel.isSelected(3)}">Reviewes</a>
+    </li>
+</ul>
+<div class="card card-block no-border-top" ng-show="panel.isSelected(1)">
+    <div class="panel-body">
+        <h4>Description</h4>
+        <p>{{product.description}}</p>
+    </div>
+</div>
+<div class="card card-block no-border-top" ng-show="panel.isSelected(2)">
+    <div class="panel-body">
+        <h4>Specifications</h4>
+        <blockquote>Empty</blockquote>
+    </div>
+</div>
+<div class="card card-block no-border-top" ng-show="panel.isSelected(3)">
+    <div class="panel-body">
+        <h4>Reviewes</h4>
+        <blockquote ng-repeat="review in product.reviews">
+            <b>Stars: {{review.stars}}</b>
+            <br> {{review.body}}
+            <br>
+            <cite>by:{{review.author}}</cite>
+        </blockquote>
+        <product-review></product-review>
+    </div>
+</div>

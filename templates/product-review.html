@@ -1,0 +1,32 @@
+<div class="card card-block">
+    <h4 style="cursor: pointer; text-align: center" ng-click="panel.toggle = true" ng-if="!panel.toggle"><b>Add a Review</b></h4>
+    <h4 style="cursor: pointer;  text-align: center" ng-click="panel.toggle = false" ng-if="panel.toggle"><b>Add a Review</b></h4>
+    <form name="reviewForm" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate ng-class="{'hidden': !panel.toggle}">
+        <blockquote>
+            <div class="stars">
+                <b>Stars: {{reviewCtrl.review.stars}}</b>
+            </div>
+            <div class="message">
+                Message: {{reviewCtrl.review.body}}
+            </div>
+            <div class="author">
+                <cite>by:{{reviewCtrl.review.author}}</cite>
+            </div>
+        </blockquote>
+        <div class="card card-block row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <select ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" required class="form-control">
+                    <option value="">Rate our product pls</option>
+                </select>
+                <br>
+                <textarea ng-model="reviewCtrl.review.body" placeholder="Leave a reviеw of product" required class="form-control"></textarea>
+                <br>
+                <div>
+                    <input ng-model="reviewCtrl.review.author" type="email" placeholder="example@mailbox.com" required class="form-control">
+                </div>
+                <div>reviewForm is {{reviewForm.$valid}}</div>
+                <input class="btn btn-success-outline" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>

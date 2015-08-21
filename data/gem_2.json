@@ -1,0 +1,31 @@
+      {      
+         "name": "Diamond",
+         "price": 44187.95,
+         "description": "This is a Diamond juwel",
+         "descriptionFull": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate ",
+         "canPurchase": true,
+         "bought": 0,
+         "soldOut": false,
+         "images": [
+             {
+                 "full": "sources/img/Gem1.jpg",
+                 "thumb": "img src"
+             },
+             {
+                 "full": "img src",
+                 "thumb": "img src"
+             }
+         ],
+         "reviews": [
+             {
+                 "stars": 5,
+                 "body": "I love this product!",
+                 "author": "joe@thomas.com"
+             },
+             {
+                 "stars": 1,
+                 "body": "I do not love this product!",
+                 "author": "joehater@thomas.com"
+             }
+         ]
+      }
