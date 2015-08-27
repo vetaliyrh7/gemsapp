@@ -1,0 +1,22 @@
+{
+    "TITLE_MAIN": "Магазин Самоцветов",
+    "MAIN_NAV": "Главная",
+    "TOTAL_COST_TAG": "Сумарная стоимость",
+    "BUY_NAV": "Купить",
+    "INTRO": "Это простой магазин самоцветов, сделаных с помощью AngularJS",
+    "BACK_TO_GEMS": "Вернуться к товарам",
+    "ADD_TO_CART": "Добавить в корзину",
+    "DESCRIPTION": "Описание",
+    "SPECIFICATIONS": "Спецификация",
+    "REVIEWS": "Отзывы",
+    "EMPTY_FIELD": "Пусто!",
+    "ADD_REVIEW_BTN": "Добавить отзыв",
+    "SUBMIT_BTN": "Отправить",
+    "STARS": "Рейтинг",
+    "BY_TAG": "Автор",
+    "MESSAGE_TAG": "Сообщение",
+    "RATE_PRODUCT_MESSAGE": "Оцените наш продукт, пожалуйста",
+    "REVIEW_FALSE_TRUE": "Форма отзыва",
+    "BUTTON_LANG_RU": "Русский",
+    "BUTTON_LANG_EN": "Английский"
+}

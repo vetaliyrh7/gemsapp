@@ -1,0 +1,22 @@
+{
+    "MAIN_NAV": "Main",
+    "TOTAL_COST_TAG": "Total cost is",
+    "BUY_NAV": "Buy",
+    "TITLE_MAIN": "Gem Store",
+    "INTRO": "This is simple Gem Store, made with AngularJS",
+    "BACK_TO_GEMS": "Back to Gems",
+    "ADD_TO_CART": "Add to cart",
+    "DESCRIPTION": "Description",
+    "SPECIFICATIONS": "Specifications",
+    "REVIEWS": "Reviews",
+    "EMPTY_FIELD": "Empty",
+    "ADD_REVIEW_BTN": "Add a review",
+    "SUBMIT_BTN": "Submit",
+    "STARS": "Stars",
+    "BY_TAG": "by",
+    "MESSAGE_TAG": "Message",
+    "RATE_PRODUCT_MESSAGE": "Rate our product pls",
+    "REVIEW_FALSE_TRUE": "Review Form is",
+    "BUTTON_LANG_RU": "Russian",
+    "BUTTON_LANG_EN": "english"
+}

@@ -8,6 +8,6 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-12">
         <img class="thumbnail img-small" ng-src="{{product.images[0].full}}" alt="gem"/>
-        <button class="absolute btn btn-success" type="button" name="button" ng-show="product.canPurchase" ng-click="store.count(product.price)">Add to a cart</button>
+        <button class="absolute btn btn-success" type="button" name="button" ng-show="product.canPurchase" ng-click="store.count(product.price)">{{'ADD_TO_CART' | translate}}</button>
     </div>
 </div>

@@ -1,34 +1,34 @@
 <ul class="nav nav-tabs nav-justified">
     <li class="nav-item">
-        <a href ng-click="panel.selectTab(1)" class="nav-link" ng-class="{active: panel.isSelected(1)}">Description</a>
+        <a href ng-click="panel.selectTab(1)" class="nav-link" ng-class="{active: panel.isSelected(1)}">{{'DESCRIPTION' | translate}}</a>
     </li>
     <li class="nav-item">
-        <a href ng-click="panel.selectTab(2)" class="nav-link" ng-class="{active: panel.isSelected(2)}">Specifications</a>
+        <a href ng-click="panel.selectTab(2)" class="nav-link" ng-class="{active: panel.isSelected(2)}">{{'SPECIFICATIONS' | translate}}</a>
     </li>
     <li class="nav-item">
-        <a href ng-click="panel.selectTab(3)" class="nav-link" ng-class="{active: panel.isSelected(3)}">Reviewes</a>
+        <a href ng-click="panel.selectTab(3)" class="nav-link" ng-class="{active: panel.isSelected(3)}">{{'REVIEWS' | translate}}</a>
     </li>
 </ul>
 <div class="card card-block no-border-top" ng-show="panel.isSelected(1)">
     <div class="panel-body">
-        <h4>Description</h4>
+        <h4>{{'DESCRIPTION' | translate}}</h4>
         <p>{{product.description}}</p>
     </div>
 </div>
 <div class="card card-block no-border-top" ng-show="panel.isSelected(2)">
     <div class="panel-body">
-        <h4>Specifications</h4>
-        <blockquote>Empty</blockquote>
+        <h4>{{'SPECIFICATIONS' | translate}}</h4>
+        <blockquote>{{'EMPTY_FIELD' | translate}}</blockquote>
     </div>
 </div>
 <div class="card card-block no-border-top" ng-show="panel.isSelected(3)">
     <div class="panel-body">
-        <h4>Reviewes</h4>
+        <h4>{{'REVIEWS' | translate}}</h4>
         <blockquote ng-repeat="review in product.reviews">
-            <b>Stars: {{review.stars}}</b>
+            <b>{{'STARS' | translate}}: {{review.stars}}</b>
             <br> {{review.body}}
             <br>
-            <cite>by:{{review.author}}</cite>
+            <cite>{{'BY_TAG' | translate}}:{{review.author}}</cite>
         </blockquote>
         <product-review></product-review>
     </div>

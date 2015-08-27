@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gem Store</title>
+    <title>GemStore</title>
     <link rel="stylesheet" href="sources/css/bootstrap.min.css" media="screen" title="bootstrap" charset="utf-8">
     <link rel="stylesheet" href="sources/css/main.css">
 </head>
@@ -19,14 +19,20 @@
                 </a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="#/">Main <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#/">{{'MAIN_NAV' | translate}} <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:  #78FA89; cursor: pointer" ng-click="changeLanguage('ru')" translate="BUTTON_LANG_RU" ng-show="store.lang === 'en'"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:  #78FA89; cursor: pointer" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN" ng-show="store.lang === 'ru'"></a>
+                </li>
             </ul>
             <ul class="nav navbar-nav pull-right">
                 <li class="nav-item">
-                    <a class="nav-link">Total cost is: <b style="color:#03a9f4">{{store.totalCost | currency}}</b></a>
+                    <a class="nav-link">{{'TOTAL_COST_TAG' | translate}}: <b style="color:#03a9f4">{{store.totalCost | currency}}</b></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#/buy" class=" btn btn-success-outline">Buy</a>
+                    <a href="#/buy" class=" btn btn-success-outline">{{'BUY_NAV' | translate}}</a>
                 </li>
             </ul>
         </div>
@@ -34,8 +40,8 @@
     <!-- Конец блока с навигацией -->
     <!-- Блок с описанием сайта -->
     <div class="jumbotron" style="text-align: center">
-        <h1 class="display-3">Gem Store!</h1>
-        <p class="lead">This is simple Gem Store, made with AngularJS</p>
+        <h1 class="display-3">{{'TITLE_MAIN' | translate}}!</h1>
+        <p class="lead">{{'INTRO' | translate}}</p>
     </div>
     <!-- Конец блока с описанием сайта -->
     <!-- Блок с главным контейнером -->
@@ -46,12 +52,17 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <!-- Angular + Dependencies -->
     <script type="text/javascript" src="sources/js/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-cookies.js"></script>
+    <script src="sources/js/angular-translate.min.js"></script>
+    <script src="sources/js/angular-translate-loader-static-files.min.js"></script>
     <script type="text/javascript" src="sources/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-route.min.js"></script>
     <!-- Apps controllers and directives -->
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="/app/routes.js"></script>
     <script type="text/javascript" src="products.js"></script>
+    <script src="translate.js"></script>
+
 </body>
 
 </html>
